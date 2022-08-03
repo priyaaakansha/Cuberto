@@ -1,0 +1,113 @@
+:root{
+  --fontfam: "Montserrat", sans-serif;
+}
+
+.login-heading {
+  color: #0c2d48;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.subtitle {
+  color: #000000;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.content {
+  color: #0c2d48;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  padding-top: 0.5rem;
+  float: right;
+  display: inline;
+}
+
+.inputs {
+  text-align: left;
+  color: black;
+  margin: auto;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.inputs2 {
+  border-radius: 15px;
+  margin-top: 500px;
+  text-align: left;
+  color: black;
+  background-color: #e5e5e5;
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+.login-button {
+  text-align: left;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24;
+  margin: auto;
+  width: 100%;
+  --background: #0c2d48;
+  --border-radius: 50px;
+}
+
+.hyperlink {
+  color: #0c2d48;
+  text-decoration: underline;
+  align-self: stretch;
+  display: inline;
+  padding:0;
+}
+
+.check {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  padding-top: 0.5rem;
+  float: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.ion-padding{
+  --ion-padding: 20px;
+}
+
+.header-img{
+  width:1200px;
+  height: 622px;
+  font-family: "Montserrat", sans-serif;
+}
+
+ion-input.ng-invalid.ng-touched{
+  border: 1.5px solid rgb(255, 116, 116);
+  border-radius: 15px;
+}
+
+ion-input.ng-valid.ng-touched{
+  border: 1.5px solid rgb(11, 116, 16);
+  border-radius: 15px;
+}
+
+// Service Layer testing
+.users {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 20em;
+}
+
+.header{
+  color:#8093f1;
+  font-size: 30px;
+  padding: 10px 10px 20px 15px;
+
+}

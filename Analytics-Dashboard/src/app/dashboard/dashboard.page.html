@@ -1,0 +1,110 @@
+
+<ion-content style="--background:#F7F4FF;">
+    <ion-toolbar class="sidebar" style="--background:#ffffff;padding-top:150px;">
+      <ion-fab-button size="small" color="light"  [disabled]='admin()'>
+        <ion-icon style="color:#8093f1"name="person" (click)="openForm()"></ion-icon>
+      </ion-fab-button>
+      <br>
+      <ion-fab-button size="small" color="light">
+        <ion-icon style="color:#8093f1" name="grid"></ion-icon>
+      </ion-fab-button>
+      <br>
+      <ion-fab-button size="small" color="light" [disabled]='!admin()' >
+        <ion-icon style="color:#8093f1; "  routerLink='../admin' name="people"></ion-icon>
+      </ion-fab-button>
+      <br>
+      <ion-fab-button size="small" color="light"  [disabled]='!admin()'>
+        <ion-icon style="color:#8093f1"  name="settings" (click)="presentAlertRadio()"></ion-icon>
+      </ion-fab-button>
+      <br>
+      <ion-fab-button size="small" color="light">
+        <ion-icon style="color:#8093f1" name="log-out-outline" (click) = 'logout()' routerLink='../home'></ion-icon>
+      </ion-fab-button>
+    </ion-toolbar>
+
+  <ion-toolbar style="--background:#0c2d48; box-shadow: 4px 4px 3px #bbd0ff;">
+    <ion-buttons id="#menu" slot="start">
+      <ion-menu-button style="color:#ffffff" autohide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button>
+        <ion-icon id="cart" slot="icon-only" name="person-circle" style="color:#fff;">
+        </ion-icon>
+      </ion-button>
+      <ion-text style="font-family:Roboto,sans-serif;color:#c8e7ff;">{{user.fName}}
+      </ion-text>
+      <ion-button (click)="notifications()" expand="round" id="notification-button" ion-button clear>
+        <ion-icon style="color: #ffffff;" name="notifications">
+        </ion-icon>
+        <ion-badge id="notifications-badge">{{counter}}</ion-badge>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="0.7">
+          <img style="height:40px; width:60px; padding-top:4px;" src="../../assets/imgs/logo-removebg-preview.png">
+        </ion-col>
+        <ion-col size="6"style="padding-top:10px;">
+          <ion-title style="font-size:25px;padding-left:0px;color:#fff">Dashboard</ion-title>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-toolbar>
+
+<ion-grid>
+  <ion-row>
+    <ion-col style="padding-left: 90px;">
+      <ion-card class="welcome" style="background-color:#B3E283">
+      <ion-card-header class="head" style="font-size: 20px;padding-bottom: 20px;">Revenue<ion-icon style="font-size: 30px;padding-left: 10px;" name="trending-up-outline"></ion-icon></ion-card-header>
+      <ion-card-content class="random">{{myRand}}</ion-card-content>
+    </ion-card>
+  </ion-col>
+    <ion-col>
+      <ion-card class="welcome"  style="background-color:#FFDD67">
+        <ion-card-header class="head" style="font-size:20px;">Bounce <ion-icon name="pulse-outline" style="font-size: 30px;padding-left: 10px;"></ion-icon></ion-card-header>
+        <ion-card-content class="random">{{myRand1}}</ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col>
+      <ion-card class="welcome" style="background-color:#fc5c5c">
+        <ion-card-header class="head" style="font-size: 20px;">Lost Deals<ion-icon name="trending-down-outline" style="font-size: 30px;padding-left: 5px;"></ion-icon></ion-card-header>
+        <ion-card-content  class="random">{{myRand2}}</ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col>
+      <ion-card class="welcome" style="background-color:#B5EAEA">
+        <ion-card-header class="head" style="font-size: 20px;">Trends <ion-icon name="repeat-outline" style="font-size: 30px;padding-left: 5px;"></ion-icon></ion-card-header>
+        <ion-card-content class="random">{{myRand3}}</ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  </ion-grid>
+
+<ion-grid style="padding-left: 110px;">
+<ion-row>
+  <ion-col size="6">
+    <app-highchart1></app-highchart1>
+  </ion-col>
+  <ion-col size="6" style=" padding-right: 20px;">
+    <app-highchart2></app-highchart2>
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col size="6" >
+    <app-highchart3></app-highchart3>
+  </ion-col>
+  <ion-col size="6" style="padding-right: 20px;">
+    <app-highchart4></app-highchart4>
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col size="6">
+    <app-highchart5></app-highchart5>
+  </ion-col>
+  <ion-col size="6" style="padding-right: 20px;">
+    <app-highchart6></app-highchart6>
+  </ion-col>
+</ion-row>
+</ion-grid>
+</ion-content>

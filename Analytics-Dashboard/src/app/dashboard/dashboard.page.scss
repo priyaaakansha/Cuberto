@@ -1,0 +1,78 @@
+.side-label{
+  padding-left: 15px;
+}
+
+.side-bar{
+  --background:black;
+}
+
+.sidebar {
+  height: 100%;
+  width: 90px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#EDE7FF;
+  overflow-x: hidden;
+  padding-top: 16px;
+  padding-left: 15px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+.main {
+  margin-left: 160px;
+  padding: 0px 10px;
+}
+
+.welcome-card{
+  box-shadow:  0px 0px 4px 2px#c8e7ff;
+  border-radius: 15px;
+}
+
+.head{
+  font-weight: 600;
+  color: #0c2d48;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  float: left;
+}
+
+.welcome{
+  box-shadow:  2px 2px 4px #c8e7ff;
+  border-radius: 15px;
+  padding-top: 10px;
+
+}
+
+.random{
+  float: right;
+  font-size: 35px;
+  color: black;
+}
+
+  #notification-button {
+            position: relative;
+            width: 45px;
+            right: 1px;
+            overflow: visible!important;
+        }
+
+
+  #notifications-badge {
+            background-color: rgb(255, 66, 66);
+            position: absolute;
+            top: -0.2px;
+            right: -3px;
+            border-radius: 100%;
+        }

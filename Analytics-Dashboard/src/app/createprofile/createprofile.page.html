@@ -1,0 +1,124 @@
+<ion-content>
+  <ion-content class="ion-content">
+    <ion-grid class="ion-padding">
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="8">
+          <ion-card class="card">
+            <ion-card-content>
+              <ion-text>
+                <ion-row>
+                  <ion-col>
+                    <ion-text style="color:#0c2d48; font-family:Montserrat;font-size:30px;">
+                    <b>Your Profile</b>
+                    </ion-text>
+                  </ion-col>
+                  <ion-col size="1.5" style="padding: 0 0 0 0">
+                  <img src="../../assets/imgs/logo-removebg-preview.png">
+                  </ion-col>
+                </ion-row>
+
+                <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+                <ion-row>
+                  <ion-col>
+                    <ion-card-content>
+                      <div class="inputs">
+                        <ion-label>
+                          First Name<ion-text style="color:red">*</ion-text>
+                        </ion-label>
+                        <div class="inputs2">
+                          <ion-input  autocapitalize=words type="text"
+                          id="fName"
+                          formControlName="fName"
+                          class="form-control"
+
+                          >
+                          </ion-input>
+                        </div>
+                      </div>
+                      <ion-text *ngIf="!profileForm.get('fName').valid && profileForm.get('fName').touched" class="help-block">
+                        Required Field!</ion-text>
+                    </ion-card-content>
+
+                  </ion-col>
+                  <ion-col>
+                    <ion-card-content>
+                        <div class="inputs">
+                          <ion-label>
+                            Last Name<ion-text style="color:red">*</ion-text>
+                          </ion-label>
+                          <div class="inputs2">
+                          <ion-input type="text" id="lName" formControlName="lName" class="form-control"
+                          >
+                          </ion-input>
+                          </div>
+                        </div>
+
+                        <ion-text *ngIf="!profileForm.get('lName').valid && profileForm.get('lName').touched"
+                          class="help-block">
+                          Required Field!</ion-text>
+                      </ion-card-content>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+              <ion-card-content>
+                <div class="inputs">
+                  <ion-label>
+                    Mobile Number<ion-text style="color:red">*</ion-text>
+                  </ion-label>
+                  <div class="inputs2">
+                    <ion-input
+                    type="text"
+                    placeholder="  Enter your 10 digit mobile number"
+                    id="phone"
+                    formControlName="phone"
+                    class="form-control"
+
+                    >
+                    </ion-input>
+                  </div>
+                </div>
+                <ion-text *ngIf="!profileForm.get('phone').valid && profileForm.get('phone').touched"
+                  class="help-block">
+                  Please enter valid number</ion-text>
+                  <div id='check'></div>
+
+        </ion-card-content>
+          </ion-col>
+            <ion-col>
+        <ion-card-content>
+          <div class="inputs">
+            <ion-label>
+              Your email<ion-text style="color:red">*</ion-text>
+            </ion-label>
+            <div class="inputs2" style="padding: 10px">
+  
+              {{userEmail}}
+            </div>
+
+          </div>
+
+
+          <ion-text *ngIf="!profileForm.get('email').valid && profileForm.get('email').touched"
+            class="help-block">
+            Required Field!</ion-text>
+        </ion-card-content>
+                  </ion-col>
+                </ion-row>
+
+                <ion-row class="ion-justify-content-center">
+                  <ion-col size="5">
+                    <ion-card-content>
+                      <ion-button class="login-button" [routerLink]="userexists() ? [] : ['/home']" type="submit">Create Profile</ion-button>
+                    </ion-card-content>
+                  </ion-col>
+                </ion-row>
+                </form>
+              </ion-text>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+</ion-content>

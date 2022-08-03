@@ -1,0 +1,25 @@
+<ion-card class="welcome-card" style="height:530px">
+  <ion-card-content>
+    <ion-fab style="font-size:10px;" (click)="toggleThumb()">
+      <ion-fab-button size="small" color="light">
+        <ion-icon style="color:#8093f1" *ngIf="showThumbsUp" name="bar-chart" (click)="showchart()"></ion-icon>
+        <ion-icon style="color:#8093f1" *ngIf="!showThumbsUp" name="list-outline" (click)="showchart()">
+        </ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+    <div id="highcharts2"></div>
+  </ion-card-content>
+  <ion-text class="head" style="padding-left: 15px;">Chart Types:</ion-text>
+  <ion-row style="padding-top: 15px;">
+    <ion-col size="4">
+      <ion-button id="inverted2"style="padding-left: 15px;" class='button'>Inverted</ion-button>
+    </ion-col>
+    <ion-col size="4" style="padding-left: 50px;">
+      <ion-button (click)="update2()" >Bar</ion-button>
+    </ion-col>
+    <ion-col size="4">
+      <ion-button style="padding-left: 35px;" (click)="update3()">Line</ion-button>
+    </ion-col>
+  </ion-row>
+  <br>
+</ion-card>

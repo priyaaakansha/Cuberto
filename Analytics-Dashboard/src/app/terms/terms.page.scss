@@ -1,0 +1,28 @@
+.ion-content {
+  --background: url(../../assets/imgs/david-van-dijk-3LTht2nxd34-unsplash.jpg) 0 0/100% 100% no-repeat !important;
+  background-color: #fff;
+}
+
+.ion-padding{
+  --ion-padding: 110px;
+}
+
+.card{
+  border-radius: 30px;
+  padding: 40px;
+}
+
+.text{
+  font-size: 20px;
+  text-align:justify;
+  color: rgba(0, 0, 0, 0.657);
+}
+
+.check {
+    color: #0c2d48;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    display: inline;
+    text-decoration: underline #052a4986;
+  }

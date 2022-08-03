@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Notifications</ion-title>
+      <ion-buttons slot="end">
+        <ion-button (click)="close()">
+          <ion-icon slot="icon-only" name="close"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style="--background:#F7F4FF;;">
+  <ion-grid *ngIf="!change()">
+  <ion-row>
+    <ion-col style="padding: 20px 30px 0px 0px">
+      <!-- <ion-text class="clear" (click)="clear(); openToast()">Mark all as read</ion-text> -->
+    </ion-col>
+  </ion-row>
+  <ion-grid *ngFor="let n of notifications"> 
+    <ion-row style="padding: 0px">
+      <ion-col style="padding: 25px 0px 0px 0px;">
+        <p style="max-width: 54ch; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{n.text}}</p>
+      </ion-col>
+    </ion-row>
+    <hr>
+  </ion-grid>
+  </ion-grid>
+
+  <ion-grid *ngIf="change()">
+    <ion-row class="ion-justify-content-center" style="padding-top: 50px;">
+      <img src="../../assets/Push notifications-rafiki.png" style="height: 250px; width: 300px;">
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-text><h3>You are all caught up!</h3></ion-text>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-text>There are no new notifications.</ion-text>
+    </ion-row>
+  </ion-grid>
+</ion-content>

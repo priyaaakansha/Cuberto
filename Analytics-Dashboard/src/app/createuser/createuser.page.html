@@ -1,0 +1,81 @@
+<script src="createuser.page.ts"></script>
+<ion-header>
+  <ion-toolbar style="--background: #bdc7fc;color: #ffffff;">
+    <ion-title>EDIT PROFILE</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content style="--background: #f4f6fd;color: #ffffff;">
+  <ion-grid>
+      <ion-row class="ion-justify-content-center">
+          <ion-col  size="8">
+                <ion-label>
+                  First Name
+                </ion-label>
+                  <ion-row class="inputs2" >
+                      <ion-input type="text" id="fName" [(ngModel)]='this.currentUser.fName' readonly="true" class="form-control" >
+                      </ion-input>
+                      <ion-icon name="pencil-outline" (click)='edit1()' style="padding-top: 10px;padding-right: 10px;"></ion-icon>
+                  </ion-row>
+          </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-justify-content-center">
+        <ion-col  size="8">
+              <ion-label>
+                Last Name
+              </ion-label>
+                <ion-row class="inputs2" >
+                    <ion-input type="text" id="lName" [(ngModel)]='this.currentUser.lName' readonly="true" class="form-control" >
+                    </ion-input>
+                    <ion-icon name="pencil-outline" (click)='edit2()' style="padding-top: 10px;padding-right: 10px;"></ion-icon>
+                </ion-row>
+        </ion-col>
+    </ion-row>
+
+      <ion-row class="ion-justify-content-center">
+          <ion-col  size="8">
+            <ion-label>
+              Mobile Number
+            </ion-label>
+              <ion-row class="inputs2" >
+                  <ion-input type="text" id="phone" [(ngModel)]='this.currentUser.phone' readonly="true"  class="form-control"  placeholder="Enter 10 digit number" >
+                  </ion-input>
+                 
+              </ion-row>
+      </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-justify-content-center">
+          <ion-col  size="8">
+            <ion-label>
+              Email Address
+            </ion-label>
+              <ion-row class="inputs2" >
+                  <ion-input type="text" id="email" [(ngModel)]='this.currentUser.email' readonly="true" class="form-control">
+                  </ion-input>
+              </ion-row>
+      </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-justify-content-center">
+          <ion-col  size="8">
+            <ion-label>
+              Password
+            </ion-label>
+              <ion-row class="inputs2" >
+                  <ion-input type="password" id="password" [(ngModel)]='this.currentUser.password' readonly="true" class="form-control">
+                  </ion-input>
+              </ion-row>
+      </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-justify-content-center" style="padding: 5px;">
+        <ion-col size="5">
+          <ion-card-content>
+            <ion-button class="login-button" (click)="onSubmit()" type="submit">Update Profile
+            </ion-button>
+          </ion-card-content>
+        </ion-col>
+      </ion-row>
+  </ion-grid>
+</ion-content>

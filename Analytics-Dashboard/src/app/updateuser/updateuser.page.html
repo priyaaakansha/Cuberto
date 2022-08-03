@@ -1,0 +1,83 @@
+<script src="updateuser.page.ts"></script>
+<ion-header>
+  <ion-toolbar style="--background: #bdc7fc;color: #ffffff;">
+    <ion-title>UPDATE USER</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content style="--background: #f4f6fd;color: #ffffff;">
+  <ion-grid>
+    <ion-row class="ion-justify-content-center" style="padding: 5px;">
+     
+        <ion-col size="8">         
+            <ion-label>
+              First Name
+            </ion-label>
+            <ion-row class="inputs2">
+              <ion-input type="text" id='fName' style="color: rgb(143, 142, 142);"  [(ngModel)]='currentUser.fName' readonly="true" class="form-control">
+              </ion-input>
+              <ion-icon name="pencil-outline" style="padding-top: 10px;padding-right: 10px;" (click)='edit1()'></ion-icon>
+            </ion-row>
+        </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center" style="padding: 5px;">
+      <ion-col size="8">         
+        <ion-label>
+          Last Name
+        </ion-label>
+        <ion-row class="inputs2">
+          <ion-input type="text" id='lName' style="color: rgb(143, 142, 142);"  [(ngModel)]='currentUser.lName' readonly="true">
+          </ion-input>
+          <ion-icon name="pencil-outline" style="padding-top: 10px;padding-right: 10px;" (click)='edit2()'></ion-icon>
+        </ion-row>
+    </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center" style="padding: 5px;">
+      <ion-col size="8">         
+        <ion-label>
+          Mobile Number
+        </ion-label>
+        <ion-row class="inputs2">
+          <ion-input type="number" style="color: rgb(143, 142, 142);" [(ngModel)]='currentUser.phone' readonly="true">
+          </ion-input>
+        </ion-row>
+    </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center" style="padding: 5px;">
+      <ion-col size="8">         
+        <ion-label>
+          Email Address
+        </ion-label>
+        <ion-row class="inputs2">
+          <ion-input type="" style="color: rgb(143, 142, 142);" [(ngModel)]='currentUser.email' readonly="true">
+          </ion-input>
+        </ion-row>
+    </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center" style="padding: 5px;">
+      <ion-col size="8">
+        <div class="inputs">
+          <ion-label>
+            Password
+          </ion-label>
+          <div class="inputs2">
+            <ion-input type="password" style="color: rgb(143, 142, 142);" [(ngModel)]='currentUser.password' readonly="true">
+            </ion-input>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center" style="padding: 5px;">
+      <ion-col size="5">
+        <ion-card-content>
+          <ion-button class="login-button" type="submit" (click)="onSubmit()">Update Profile
+          </ion-button>
+        </ion-card-content>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

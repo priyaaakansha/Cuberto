@@ -1,0 +1,92 @@
+<ion-header>
+  <ion-toolbar style="--background: #bdc7fc;color: #ffffff;">
+    <ion-title>ADD USER</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content style="--background: #f4f6fd;color: #ffffff;">
+  <ion-grid>
+    <form [formGroup]='profileForm' >
+      <ion-row class="ion-justify-content-center" style="padding: 5px;">
+        <ion-col size="8">
+          <div class="inputs">
+            <ion-label>
+              First Name
+            </ion-label>
+            <div class="inputs2">
+              <ion-input type="text" id="fName" formControlName="fName" class="form-control">
+              </ion-input>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-justify-content-center" style="padding: 5px;">
+        <ion-col size="8">
+          <div class="inputs">
+            <ion-label>
+              Last Name
+            </ion-label>
+            <div class="inputs2">
+              <ion-input type="text" id="lName" formControlName="lName" class="form-control">
+              </ion-input>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-justify-content-center" style="padding: 5px;">
+        <ion-col size="8">
+          <div class="inputs">
+            <ion-label>
+              Mobile Number
+            </ion-label>
+            <div class="inputs2">
+              <ion-input id="phone" formControlName="phone" class="form-control" type="number"
+                placeholder="Enter 10 digit number">
+              </ion-input>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-justify-content-center" style="padding: 5px;">
+        <ion-col size="8">
+          <div class="inputs">
+            <ion-label>
+              Email Address
+            </ion-label>
+            <div class="inputs2">
+              <ion-input id="email" formControlName="email" class="form-control" type="email"
+                placeholder="xyz@company.com">
+              </ion-input>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-justify-content-center" style="padding: 5px;">
+        <ion-col size="8">
+          <div class="inputs">
+            <ion-label>
+              Password
+            </ion-label>
+            <div class="inputs2">
+              <ion-input id="password" formControlName="password" class="form-control" type="password"
+                placeholder=" Default Password">
+              </ion-input>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-justify-content-center" style="padding: 5px;">
+        <ion-col size="5">
+          <ion-card-content>
+            <ion-button class="login-button" (click)="onSubmit()" type="submit">Create Profile
+            </ion-button>
+          </ion-card-content>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-grid>
+</ion-content>

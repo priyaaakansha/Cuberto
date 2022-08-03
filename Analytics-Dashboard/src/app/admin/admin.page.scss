@@ -1,0 +1,84 @@
+table {
+  width: 100%;
+  padding-left: 400px;
+}
+
+#notification-button {
+            position: relative;
+            width: 45px;
+            right: 1px;
+            overflow: visible!important;
+        }
+
+
+  #notifications-badge {
+            background-color: rgb(255, 66, 66);
+            position: absolute;
+            top: -0.2px;
+            right: -3px;
+            border-radius: 100%;
+        }
+
+.icon{
+  color: rgba(255, 0, 0, 0.596);
+}
+
+.icon:hover{
+  color: rgba(255, 0, 0);
+  font-size: 30px;
+}
+
+.icon1{
+  color: rgba(47, 83, 245, 0.596);
+}
+
+.icon1:hover{
+  color: rgb(50, 103, 247);
+  font-size: 30px;
+}
+.side-label{
+  padding-left: 15px;
+}
+
+.side-bar{
+  --background:black;
+}
+
+.sidebar {
+  height: 100%;
+  width: 90px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#EDE7FF;
+  overflow-x: hidden;
+  padding-top: 16px;
+  padding-left: 15px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.header{
+  background: #bac5ff;
+  // background: rgb(247, 239, 253);
+  font-weight: 500;
+  // color: #7f91ee;
+  color: white;
+  font-family:Montserrat
+}
+
+.rows{
+
+  font-family:Montserrat
+}

@@ -1,0 +1,44 @@
+@import 'https://code.highcharts.com/css/highcharts.css';
+
+.welcome-card{
+  box-shadow:  2px 2px 4px #c8e7ff;
+  border-radius: 15px;
+  }
+
+  .head{
+  font-weight: 600;
+  color: #0c2d48;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  float: left;
+}
+
+.button{
+  --background :rgb(97, 107, 243);
+}
+
+.highcharts-table-caption {
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    font-size: 14pt;
+}
+.highcharts-data-table table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    background: white;
+    min-width: 100%;
+    margin-top: 10px;
+}
+.highcharts-data-table td, .highcharts-data-table th {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 10pt;
+    border: 1px solid silver;
+    padding: 0.5em;
+}
+.highcharts-data-table tr:nth-child(even), .highcharts-data-table thead tr {
+    background: #f8f8f8;
+}
+.highcharts-data-table tr:hover {
+    background: #eff;
+}
